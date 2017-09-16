@@ -34,5 +34,6 @@
 
 /* handy functions. */
 char *eury_config_version(void);
+int eury_config_build(void);
 
 #endif

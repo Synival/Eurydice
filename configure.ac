@@ -10,6 +10,7 @@ AC_INIT(eurydice, [eury_version])
 
 # Pass version along to Makefile.
 AC_SUBST(EURY_VERSION, [eury_version])
+AC_SUBST(EURY_BUILD, [$(git rev-list --count master)])
 
 # AC Configuration.
 AC_CONFIG_SRCDIR([src/.dummy])

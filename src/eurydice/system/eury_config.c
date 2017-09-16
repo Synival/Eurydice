@@ -35,3 +35,7 @@ int _eury_strcasecmp(const char *s1, const char *s2) {
 char *eury_config_version(void) {
    return EURY_VERSION;
 }
+
+int eury_config_build(void) {
+   return EURY_BUILD;
+}
