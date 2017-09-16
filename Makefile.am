@@ -7,18 +7,18 @@ libeurydice_la_LDFLAGS = \
 libeurydice_la_CFLAGS = \
    -I$(top_srcdir)/include -Wall -DEURY_VERSION=\"$(EURY_VERSION)\"
 libeurydice_la_SOURCES = \
-   src/eurydice/eurydice.c \
-   src/eurydice/eury_config.c
+   src/eurydice/system/eury_config.c \
+   src/eurydice/system/init.c
 
-otherincludedir = \
-   $(includedir)/eurydice
+otherincludedir = $(includedir)/eurydice
 otherinclude_HEADERS = \
    include/eurydice/defs.h \
-   include/eurydice/eury_config.h \
-   include/eurydice/eurydice.h
+   include/eurydice/eurydice.h \
+   include/eurydice/system/eury_config.h \
+   include/eurydice/system/init.h
 
 bin_PROGRAMS = eurydemo
 eurydemo_SOURCES = \
-   src/eurydemo/main.c
+   src/demo/main.c
 eurydemo_CFLAGS  = -I$(top_srcdir)/include -Wall
 eurydemo_LDFLAGS = -L../lib -leurydice

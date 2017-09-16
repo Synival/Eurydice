@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "eurydice/eury_config.h"
+#include "eurydice/system/eury_config.h"
 
 #ifndef HAVE_STRDUP
 char *_eury_strdup(const char *str) {
